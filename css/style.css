@@ -7,12 +7,15 @@ background: #E5DDD5 url("https://www.toptal.com/designers/subtlepatterns/pattern
 
 }
 /*chat page*/
+#prime i{
+  color: #fff
+}
 .input-group-text{
   background: transparent;
   border: none;
 }
 .page-header {
-  background: #006A4E;
+  background: #2c96ec;
   margin: 0;
   padding: 7px 0 0;
   color: #FFFFFF;
@@ -43,7 +46,7 @@ background: #E5DDD5 url("https://www.toptal.com/designers/subtlepatterns/pattern
 
 .chat-log__item.chat-log__item--own {
   float: right;
-  background: #DCF8C6;
+  background: #c6f6f8;
   text-align: right;
 }
 
@@ -60,7 +63,9 @@ background: #E5DDD5 url("https://www.toptal.com/designers/subtlepatterns/pattern
   font-size: 14px;
   font-weight: bold;
 }
-
+.chat-log__author small{
+  float: right;
+}
 /* chat*/
 
 
@@ -158,7 +163,7 @@ ul li{
 .more i{
  font-size: 1.6em;
   line-height: 35px;
-  color: #bbb;
+  color: #dfdcdc;
   cursor: pointer;
 }
 .chat {
@@ -634,16 +639,35 @@ strong.chat_time {
 }
 /* SMARTPHONES PORTRAIT */
 
+@media only screen and (min-width: 250px) {
+ .chat {
+    width: 95%;
+    height: 95%;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+  }
+}
+/* SMARTPHONES PORTRAIT */
+
 @media only screen and (min-width: 300px) {
-  .chat {
-    width: 250px;
+ .chat {
+    width: 95%;
+    height: 95%;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
   }
 }
 /* SMARTPHONES LANDSCAPE */
 
 @media only screen and (min-width: 480px) {
   .chat {
-    width: 300px;
+    width: 95%;
+    height: 95%;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
   }
   .chat_field {
     width: 65%;
@@ -653,7 +677,11 @@ strong.chat_time {
 
 @media only screen and (min-width: 768px) {
   .chat {
-    width: 300px;
+    width: 95%;
+    height: 95%;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
   }
   .chat_field {
     width: 65%;
@@ -664,6 +692,9 @@ strong.chat_time {
 @media only screen and (min-width: 1024px) {
   .chat {
     width: 300px;
+    height: 77%;
+    right: 60px;
+    bottom: 16px;
   }
   .chat_field {
     width: 65%;
