@@ -32,6 +32,11 @@ function toggleFab() {
   $('#chat_fourth_screen').click(function(e) {
         hideChat(4);
   });
+   $('#chat_first_screen2').click(function(e) {
+        $('#chat_converse').hide();
+         $('#chat_frt').show();
+
+  });
 
   $('#chat_fullscreen_loader').click(function(e) {
       $('.fullscreen').toggleClass('zmdi-window-maximize');

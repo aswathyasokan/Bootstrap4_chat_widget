@@ -13,6 +13,9 @@ background: #E5DDD5 url("https://www.toptal.com/designers/subtlepatterns/pattern
 .input-group-text{
   background: transparent;
   border: none;
+  width: 67px;
+    height: 45px;
+    cursor: pointer;
 }
 .page-header {
   background: #2c96ec;
@@ -24,8 +27,8 @@ background: #E5DDD5 url("https://www.toptal.com/designers/subtlepatterns/pattern
   z-index: 1
 }
 .main {
-  height: 100vh;
-  padding-top: 70px;
+  
+  padding-top: 10px;
 }
 
 .chat-log {
@@ -50,18 +53,14 @@ background: #E5DDD5 url("https://www.toptal.com/designers/subtlepatterns/pattern
   text-align: right;
 }
 
-.chat-form {
-  background:transparent;
-  padding: 0px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.input-group {
+    width: 100%;
 }
 
 .chat-log__author {
   margin: 0 auto .5em;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
 }
 .chat-log__author small{
   float: right;
@@ -382,7 +381,10 @@ ul li{
 
 }
 .fab_field {
-  width: 100%;
+  position: sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
   display: inline-block;
   text-align: center;
   background: #fff;
@@ -436,15 +438,15 @@ ul li{
 .chat_converse {
   position: relative;
     background: #fff;
-    margin: 6px 0 0px 0;
-    height: 300px;
+    margin: 0px 0 0px 0;
+    height: 95%;
     min-height: 0;
     font-size: 12px;
     line-height: 18px;
     overflow-y: auto;
     width: 100%;
     float: right;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 .chat_converse2{
       height: 100%;
@@ -461,7 +463,7 @@ ul li{
   visibility: hidden;
 }
 
-.chat_converse .chat_msg_item {
+.chat .chat_converse .chat_msg_item {
   position: relative;
   margin: 8px 0 15px 0;
   padding: 8px 10px;
@@ -487,7 +489,7 @@ ul li{
     font-size: 11px;
     opacity: 0.3;
 }
-.chat_converse .chat_msg_item .chat_avatar {
+.chat .chat_converse .chat_msg_item .chat_avatar {
   position: absolute;
   top: 0;
 }
@@ -497,33 +499,33 @@ ul li{
   background: rgba(0, 0, 0, 0.03);
 }
 
-.chat_converse .chat_msg_item.chat_msg_item_user .chat_avatar {
+.chat .chat_converse .chat_msg_item.chat_msg_item_user .chat_avatar {
   right: -52px;
   background: rgba(0, 0, 0, 0.6);
 }
 
-.chat_converse .chat_msg_item .chat_avatar, .chat_avatar img{
+.chat .chat_converse .chat_msg_item .chat_avatar, .chat_avatar img{
   width: 40px;
   height: 40px;
   text-align: center;
   border-radius: 50%;
 }
 
-.chat_converse .chat_msg_item.chat_msg_item_admin {
+.chat .chat_converse .chat_msg_item.chat_msg_item_admin {
   margin-left: 60px;
   float: left;
   background: rgba(0, 0, 0, 0.03);
   color: #666;
 }
 
-.chat_converse .chat_msg_item.chat_msg_item_user {
+.chat .chat_converse .chat_msg_item.chat_msg_item_user {
   margin-right: 20px;
   float: right;
   background: #42a5f5;
   color: #eceff1;
 }
 
-.chat_converse .chat_msg_item.chat_msg_item_admin:before {
+.chat .chat_converse .chat_msg_item.chat_msg_item_admin:before {
   content: '';
   position: absolute;
   top: 15px;
@@ -640,6 +642,14 @@ strong.chat_time {
 /* SMARTPHONES PORTRAIT */
 
 @media only screen and (min-width: 250px) {
+   .fab {
+    margin: 0px auto 55px;
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+}
  .chat {
     width: 95%;
     height: 95%;
@@ -651,6 +661,20 @@ strong.chat_time {
 /* SMARTPHONES PORTRAIT */
 
 @media only screen and (min-width: 300px) {
+  .input-group-text {
+    background: transparent;
+    border: none;
+    width:80px;
+    height: 45px;
+}
+   .fab {
+    margin: 0px auto 55px;
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+}
  .chat {
     width: 95%;
     height: 95%;
@@ -662,6 +686,14 @@ strong.chat_time {
 /* SMARTPHONES LANDSCAPE */
 
 @media only screen and (min-width: 480px) {
+  .fab {
+    margin: 0px auto 55px;
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+}
   .chat {
     width: 95%;
     height: 95%;
@@ -676,6 +708,20 @@ strong.chat_time {
 /* TABLETS PORTRAIT */
 
 @media only screen and (min-width: 768px) {
+  .input-group-text {
+    background: transparent;
+    border: none;
+    width:100px;
+    height: 45px;
+}
+  .fab{
+    margin: 0px auto 55px;
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+  }
   .chat {
     width: 95%;
     height: 95%;
@@ -691,10 +737,10 @@ strong.chat_time {
 
 @media only screen and (min-width: 1024px) {
   .chat {
-    width: 300px;
-    height: 77%;
+   width: 360px;
+    height: 81%;
     right: 60px;
-    bottom: 16px;
+    bottom: 58px;
   }
   .chat_field {
     width: 65%;
